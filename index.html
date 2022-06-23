@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>zizi1234</title>
 <link rel="" type="text/css" href="style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +37,7 @@ function speedF(num){
 	_speed = num * 100;
 	numberOfSnowflakes = num * 100;
 	var time = parseFloat(0.5/num);
-	var nd = -18/num+" °C";
+	var nd = -num*5+" °C";
 	jQuery(".maylanh").css({"animation":"tilt-shaking "+time+"s linear infinite"});
 	jQuery(".nhietdo").css({"animation":"tilt-shaking "+time+"s linear infinite"});
 	jQuery(".nhietdo").text(nd);
@@ -45,18 +46,17 @@ function speedF(num){
 </head>
 <body style="background-color: azure;">
 	<div>
-		<audio controls loop>
+		<audio controls>
 			<source  src="./cbmd.mp3" type="audio/mpeg">
 		</audio>
-	</div>
 <div id='snowflakeContainer'>
 	<div style="margin:0 auto; width:450px;position: relative;">
 		<img class="maylanh" src="maylanh.png">
-		<span class="nhietdo">38 °C</span>
+		<span class="nhietdo">40 °C</span>
 		<div style="margin:0 auto;text-align:center">
-			<button onclick="speedF(1)">Lạnh</button>
-			<button onclick="speedF(2)">Lạnhh</button>
-			<button onclick="speedF(3)">Lạnhhh</button>
+			<button onclick="speedF(1)">I'm fine</button>
+			<button onclick="speedF(2)">I'm alone</button>
+			<button onclick="speedF(3)">I need a ...</button>
 		</div>
 	</div>
 	
@@ -64,7 +64,6 @@ function speedF(num){
 </div>
 
 <script src="script.js?v=1">
-	
 </script>
 
 </body>
